@@ -1,0 +1,3 @@
+gen:
+	gdbus-codegen --generate-c-code src/myApp_generated --c-generate-object-manager misc/interface.xml --c-namespace MyExample --interface-prefix MyExampleInterface
+	mv "src"/*.h include/
